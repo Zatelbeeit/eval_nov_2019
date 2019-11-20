@@ -3,5 +3,23 @@ header{
 }
 .navbar-brand{
     font-family:'Kaushan Script', cursive;
+
 }
+@keyframes blinking {
+    0%{
+      background-color: green;
+    }
+    100%{
+      background-color:white;
+    //   border: 5px solid white;
+    }
+  }
+  .blink{
+    width: 10px;
+    height: 25px;
+  }
+  .blink:hover{
+    /* NAME | TIME | ITERATION */
+    animation: blinking 1s infinite;
+  }
  

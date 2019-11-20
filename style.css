@@ -5,11 +5,30 @@ header {
 .navbar-brand {
   font-family: 'Kaushan Script', cursive; }
 
+@keyframes blinking {
+  0% {
+    background-color: green; }
+  100% {
+    background-color: white; } }
+.blink {
+  width: 10px;
+  height: 25px; }
+
+.blink:hover {
+  /* NAME | TIME | ITERATION */
+  animation: blinking 1s infinite; }
+
 main {
   width: 80%;
   margin: auto; }
   main h2 {
     margin-top: 2rem; }
+  main .card-body:nth-of-type(2n+1) {
+    background: darkgray;
+    color: white; }
+  main .card-body:nth-of-type(even) {
+    background: white;
+    color: black; }
 
 footer {
   padding-top: 3rem;
